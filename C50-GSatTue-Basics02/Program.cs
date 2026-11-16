@@ -72,18 +72,25 @@ namespace C50_GSatTue_Basics02
 
             #region question 8
             //Q08.  Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            int x=int.Parse(yearText);
-            Console.WriteLine(x);
+            //string yearText = "2023";
+            //int x=int.Parse(yearText);
+            //Console.WriteLine(x);
 
-            string badText = "abc";
-            bool y = int.TryParse(badText, out int z);
-            if (y)
-                Console.WriteLine($"valid numbe {z}");
-            else
-                Console.WriteLine("Invalid number");
+            //string badText = "abc";
+            //bool y = int.TryParse(badText, out int z);
+            //if (y)
+            //    Console.WriteLine($"valid numbe {z}");
+            //else
+            //    Console.WriteLine("Invalid number");
 
 
+            #endregion
+
+            #region question 9
+            //Q09.  Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string
+            int pages = 464;
+            string x=pages.ToString();
+            Console.WriteLine(x.GetType());
             #endregion
         }
     }
