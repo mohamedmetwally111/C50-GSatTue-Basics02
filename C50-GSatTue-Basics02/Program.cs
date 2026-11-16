@@ -128,14 +128,20 @@ namespace C50_GSatTue_Basics02
 
             #region question 14
             //Q14.  Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to title the value "Untitled" only if it's still null.
-            Book? book = null;
-            string? Title = book?.Title;
-            Console.WriteLine(Title ?? "Untitled");
+            //Book? book = null;
+            //string? Title = book?.Title;
+            //Console.WriteLine(Title ?? "Untitled");
 
-            Title ??= "Untitled";
-            Console.WriteLine(Title);
+            //Title ??= "Untitled";
+            //Console.WriteLine(Title);
             #endregion
 
+            #region question 15
+            //Q15.  Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable string confirmedName using the ! operator
+            //string? name = "Ahmed";
+            //string confirmedName = name!;
+            //Console.WriteLine(confirmedName);
+            #endregion
 
         }
     }
