@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.Runtime.Intrinsics.X86;
 
 namespace C50_GSatTue_Basics02
 {
@@ -63,9 +65,25 @@ namespace C50_GSatTue_Basics02
 
             #region question 7
             //Q07.  Given string pagesText = "464";, convert it into an int using the Convert class
-            string pagesText = "464";
-            int x = Convert.ToInt32(pagesText);
+            //string pagesText = "464";
+            //int x = Convert.ToInt32(pagesText);
+            //Console.WriteLine(x);
+            #endregion
+
+            #region question 8
+            //Q08.  Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string yearText = "2023";
+            int x=int.Parse(yearText);
             Console.WriteLine(x);
+
+            string badText = "abc";
+            bool y = int.TryParse(badText, out int z);
+            if (y)
+                Console.WriteLine($"valid numbe {z}");
+            else
+                Console.WriteLine("Invalid number");
+
+
             #endregion
         }
     }
