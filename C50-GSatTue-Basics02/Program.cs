@@ -1,4 +1,6 @@
-﻿namespace C50_GSatTue_Basics02
+﻿using System.Runtime.CompilerServices;
+
+namespace C50_GSatTue_Basics02
 {
     internal class Program
     {
@@ -14,12 +16,19 @@
 
             #region question 2
             //Q02.  Using the Book class above, print the result of calling ToString(), Equals() (compare book with itself), GetHashCode(), and GetType() on book.
-            Book book = new Book() { Title = "C#", pages = 250 };
-            Console.WriteLine(book.ToString());
-            Console.WriteLine(book.Equals(book));
-            Console.WriteLine(book.GetHashCode());
-            Console.WriteLine(book.GetType());
+            //Book book = new Book() { Title = "C#", pages = 250 };
+            //Console.WriteLine(book.ToString());
+            //Console.WriteLine(book.Equals(book));
+            //Console.WriteLine(book.GetHashCode());
+            //Console.WriteLine(book.GetType());
             #endregion
-        }
-    }
+
+            #region question 3
+            //Q03.  Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it. int pages = "464";
+
+            /* compile-time error */
+            int pages = int.Parse("464"); //fixed
+            #endregion
+}
+}
 }
