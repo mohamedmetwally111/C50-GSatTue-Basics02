@@ -113,11 +113,17 @@ namespace C50_GSatTue_Basics02
 
             #region question 12
             //Q12.  Declare a string? reviewer = null;. Print whether it is null.
-            string? reviewer = null;
-            if (reviewer == null)
-                Console.WriteLine("reviewer is null");
-            else
-                Console.WriteLine("reviewer not null");
+            //string? reviewer = null;
+            //if (reviewer == null)
+            //    Console.WriteLine("reviewer is null");
+            //else
+            //    Console.WriteLine("reviewer not null");
+            #endregion
+
+            #region question 13
+            // Q13.  Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result
+            Book? book = null;
+            Console.WriteLine(book?.Title);
             #endregion
         }
     }
