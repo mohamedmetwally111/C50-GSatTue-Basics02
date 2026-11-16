@@ -122,9 +122,21 @@ namespace C50_GSatTue_Basics02
 
             #region question 13
             // Q13.  Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result
-            Book? book = null;
-            Console.WriteLine(book?.Title);
+            //Book? book = null;
+            //Console.WriteLine(book?.Title);
             #endregion
+
+            #region question 14
+            //Q14.  Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to title the value "Untitled" only if it's still null.
+            Book? book = null;
+            string? Title = book?.Title;
+            Console.WriteLine(Title ?? "Untitled");
+
+            Title ??= "Untitled";
+            Console.WriteLine(Title);
+            #endregion
+
+
         }
     }
 }
