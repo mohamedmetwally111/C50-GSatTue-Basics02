@@ -105,10 +105,19 @@ namespace C50_GSatTue_Basics02
 
             #region question 11
             //Q11.  Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value
-            int? year = null;
-            Console.WriteLine(year.HasValue);
-            year = 2023;
-            Console.WriteLine(year.HasValue);
+            //int? year = null;
+            //Console.WriteLine(year.HasValue);
+            //year = 2023;
+            //Console.WriteLine(year.HasValue);
+            #endregion
+
+            #region question 12
+            //Q12.  Declare a string? reviewer = null;. Print whether it is null.
+            string? reviewer = null;
+            if (reviewer == null)
+                Console.WriteLine("reviewer is null");
+            else
+                Console.WriteLine("reviewer not null");
             #endregion
         }
     }
