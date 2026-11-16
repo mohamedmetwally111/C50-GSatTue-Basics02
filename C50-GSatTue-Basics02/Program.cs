@@ -49,8 +49,15 @@ namespace C50_GSatTue_Basics02
 
             #region question 5
             //Q05.  Declare an int pages = 300; then store it in a double variable without using a cast
-            int pages = 300;
-            double x = pages;
+            //int pages = 300;
+            //double x = pages;
+            //Console.WriteLine(x);
+            #endregion
+
+            #region question 6
+            //Q06.  Declare a double price = 49.99; then convert it into an int using a cast
+            double price = 49.99;
+            int x = (int)price;
             Console.WriteLine(x);
             #endregion
         }
