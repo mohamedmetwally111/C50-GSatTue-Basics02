@@ -95,12 +95,20 @@ namespace C50_GSatTue_Basics02
 
             #region question 10
             //Q10.  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
-            int copies = 100;
-            object ob = copies;  //boxing
-            Console.WriteLine(ob);
+            //int copies = 100;
+            //object ob = copies;  //boxing
+            //Console.WriteLine(ob);
 
-            int x = (int)ob;  //unboxing
-            Console.WriteLine(x);
+            //int x = (int)ob;  //unboxing
+            //Console.WriteLine(x);
+            #endregion
+
+            #region question 11
+            //Q11.  Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value
+            int? year = null;
+            Console.WriteLine(year.HasValue);
+            year = 2023;
+            Console.WriteLine(year.HasValue);
             #endregion
         }
     }
