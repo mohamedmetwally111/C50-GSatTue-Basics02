@@ -56,8 +56,15 @@ namespace C50_GSatTue_Basics02
 
             #region question 6
             //Q06.  Declare a double price = 49.99; then convert it into an int using a cast
-            double price = 49.99;
-            int x = (int)price;
+            //double price = 49.99;
+            //int x = (int)price;
+            //Console.WriteLine(x);
+            #endregion
+
+            #region question 7
+            //Q07.  Given string pagesText = "464";, convert it into an int using the Convert class
+            string pagesText = "464";
+            int x = Convert.ToInt32(pagesText);
             Console.WriteLine(x);
             #endregion
         }
